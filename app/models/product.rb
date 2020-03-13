@@ -23,7 +23,6 @@ class Product < ApplicationRecord
   validates :postage_burden,          presence: true
   validates :payment_status,          presence: true
   validates :recieving_status,        presence: true
-  validates :images                   presence: true
 
   enum size: [:"XS以下", :"S", :"M", :"L", :"XL",:"XL以上",:"FREE_SIZE"]
   enum condition: [ :"新品、未使用", :"未使用に近い", :"目立った傷や汚れなし",:"やや傷や汚れあり",:"傷や汚れあり", :"全体的に状態が悪い"]
