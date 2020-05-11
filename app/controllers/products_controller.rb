@@ -12,6 +12,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
+    binding.pry
     if @img_attr.present? && @product.save 
       flash[:notice] = "出品が完了しました"
       redirect_to "/"
